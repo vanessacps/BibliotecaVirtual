@@ -61,6 +61,8 @@ class Livros {
         for (let i = 0; i < this.arrayLivros.length ; i++){
             if(this.arrayLivros[i].id == id){
                 this.arrayLivros[i].nomeLivro = livro.nomeLivro;
+                autorLivro = livro.autorLivro;
+                anoLivro = livro.anoLivro;
             }
         }
     }
@@ -94,7 +96,9 @@ class Livros {
         return true;
     }
     cancelar(){
-        document.getElementById("livro").value = " ";
+        document.getElementById("nome").value = " ";
+        document.getElementById("autor").value = " ";
+        document.getElementById("ano").value = " ";
         document.getElementById("btn1").innerText ="Salvar";
         this.editId = null;
 
@@ -112,6 +116,9 @@ class Livros {
         }
 
     } 
+    }
+    buscar(){
+        
     }
     
 

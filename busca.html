@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Cadastro</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,20 +21,25 @@
 
     <main>
         <div class="title">
-            <h2>Pagina inicial</h2>
+            <h2>Buscar livros</h2>
+            <span>Digite os dados do livro que deseja buscar: </span>
 
-            <span>Vamos aproveitar os beneficios que nossa biblioteca virtual tem pra você ?  </span>
-            
 
-            
-            <a href="busca.html"><button>Buscar Livros</button></a>
-            <a href="cadastro.html"><button>Cadastrar Livros</button></a>
-            
-         
+        </div>
+         <div class="card">
+            <div class="lineInput">
+                <label >Livro</label>
+                <input type="text" id="livro" placeholder="Titulo do livro">
+                
+                <input type="text" id="autor" placeholder="Autor do livro">
+                
+                <input type="text" id="ano" placeholder="Ano de lançamento">
 
-         </div>
-           
-    
+            </div>
+            
+            <button onclick="livros.buscar()" id = "btn1">Buscar</button>
+            
+      
     
        
 
